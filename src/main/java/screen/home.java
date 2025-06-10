@@ -38,7 +38,7 @@ public class home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(14, 14, 78));
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 420));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\icon.PNG")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon.PNG"))); // NOI18N
         jLabel1.setToolTipText("");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N

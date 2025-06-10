@@ -37,10 +37,10 @@ public class registro extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         correotex = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        psstex = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        psstex = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -88,27 +88,17 @@ public class registro extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
 
-        jTextField3.setBackground(new java.awt.Color(110, 110, 110));
-        jTextField3.setForeground(new java.awt.Color(240, 240, 240));
-        jTextField3.setText("Contraseña");
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-
         jLabel5.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
+
+        jPasswordField1.setBackground(new java.awt.Color(110, 110, 110));
+        jPasswordField1.setForeground(new java.awt.Color(240, 240, 240));
+        jPasswordField1.setText("jPasswordField1");
 
         psstex.setBackground(new java.awt.Color(110, 110, 110));
         psstex.setForeground(new java.awt.Color(240, 240, 240));
-        psstex.setText("Confirma la Contraseña");
-        psstex.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                psstexActionPerformed(evt);
-            }
-        });
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
+        psstex.setText("jPasswordField2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -130,11 +120,11 @@ public class registro extends javax.swing.JFrame {
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(correotex, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(nombretex, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(psstex, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(correotex, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
+                                    .addComponent(nombretex, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
+                                    .addComponent(jPasswordField1)
+                                    .addComponent(psstex)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -158,16 +148,13 @@ public class registro extends javax.swing.JFrame {
                     .addComponent(correotex, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(psstex, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPasswordField1))
+                .addGap(17, 17, 17)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(psstex))
                 .addGap(18, 18, 18)
                 .addComponent(singup)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
@@ -196,14 +183,6 @@ public class registro extends javax.swing.JFrame {
     private void correotexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correotexActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_correotexActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void psstexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psstexActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_psstexActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
@@ -270,9 +249,9 @@ public class registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField nombretex;
-    private javax.swing.JTextField psstex;
+    private javax.swing.JPasswordField psstex;
     private javax.swing.JButton singup;
     // End of variables declaration//GEN-END:variables
 }
