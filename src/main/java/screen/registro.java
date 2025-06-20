@@ -5,6 +5,7 @@
 package screen;
 
 import funtion.controller;
+import javax.swing.*;
 
 /**
  *
@@ -39,7 +40,7 @@ public class registro extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        pass1 = new javax.swing.JPasswordField();
         psstex = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -75,7 +76,7 @@ public class registro extends javax.swing.JFrame {
         nombretex.setForeground(new java.awt.Color(240, 240, 240));
         nombretex.setText("Nombre");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/viñeta.PNG"))); // NOI18N
 
         correotex.setBackground(new java.awt.Color(110, 110, 110));
         correotex.setForeground(new java.awt.Color(240, 240, 240));
@@ -86,15 +87,15 @@ public class registro extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/viñeta.PNG"))); // NOI18N
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/viñeta.PNG"))); // NOI18N
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("K:\\Unal\\POO\\Proyecto final\\img\\viñeta.PNG")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/viñeta.PNG"))); // NOI18N
 
-        jPasswordField1.setBackground(new java.awt.Color(110, 110, 110));
-        jPasswordField1.setForeground(new java.awt.Color(240, 240, 240));
-        jPasswordField1.setText("jPasswordField1");
+        pass1.setBackground(new java.awt.Color(110, 110, 110));
+        pass1.setForeground(new java.awt.Color(240, 240, 240));
+        pass1.setText("jPasswordField1");
 
         psstex.setBackground(new java.awt.Color(110, 110, 110));
         psstex.setForeground(new java.awt.Color(240, 240, 240));
@@ -123,7 +124,7 @@ public class registro extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(correotex, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
                                     .addComponent(nombretex, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
-                                    .addComponent(jPasswordField1)
+                                    .addComponent(pass1)
                                     .addComponent(psstex)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -150,7 +151,7 @@ public class registro extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPasswordField1))
+                    .addComponent(pass1))
                 .addGap(17, 17, 17)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -199,8 +200,23 @@ public class registro extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void singupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_singupActionPerformed
-        controller bd = new controller();       
-        bd.conectar(nombretex.getText(), correotex.getText(), psstex.getText());
+        String correounal = correotex.getText();
+        String pss1 = pass1.getText();
+        String pss2 = psstex.getText();
+        if(correounal.endsWith("@unal.edu.co")) {
+            
+            if(pss1.equals(pss2)){
+                controller bd = new controller();       
+                bd.conectar(nombretex.getText(), correotex.getText(), psstex.getText());}
+                else{
+                JOptionPane.showMessageDialog(null, "❌ Las contraseñas no coinciden");
+                    }
+            }
+        else {
+                    JOptionPane.showMessageDialog(null, "❌ Email NO válido. Debe terminar en @unal.edu.co");
+                }
+        
+        
     }//GEN-LAST:event_singupActionPerformed
 
     /**
@@ -249,8 +265,8 @@ public class registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField nombretex;
+    private javax.swing.JPasswordField pass1;
     private javax.swing.JPasswordField psstex;
     private javax.swing.JButton singup;
     // End of variables declaration//GEN-END:variables
