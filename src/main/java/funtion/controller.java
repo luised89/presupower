@@ -70,7 +70,28 @@ private static Connection con;
         
         cuentasave consusr = new cuentasave();
         consusr.consultauser(con, usuarioin, passin, frameParaCerrar);    
-    }
-}
+    } 
     
-
+    public void consultageneral(String tablasearch) {
+      
+        con=null;
+        try{
+            Class.forName(driver);
+            // Nos conectamos al gestor de bd
+            con= DriverManager.getConnection(url, user, pass);
+            // Si la conexion fue exitosa mostramos un mensaje de conexion exitosa
+            if (con!=null){
+                System.out.println("Conexion establecida");
+            }
+        }
+        // Si la conexion NO fue exitosa mostramos un mensaje de error
+        catch (ClassNotFoundException | SQLException e){
+            System.out.println("Error de conexion" + e);
+        }   
+     
+        busquedas nwsearch = new busquedas();
+        nwsearch.consultamaterial(con, tablasearch);
+        
+    }
+    
+}

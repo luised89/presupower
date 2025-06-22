@@ -36,7 +36,7 @@ public class inicio extends javax.swing.JFrame {
         nameusr = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        loginbotom = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         passusr = new javax.swing.JPasswordField();
@@ -65,11 +65,11 @@ public class inicio extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/viñeta.PNG"))); // NOI18N
 
-        jButton2.setBackground(new java.awt.Color(204, 204, 204));
-        jButton2.setText("Login");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        loginbotom.setBackground(new java.awt.Color(204, 204, 204));
+        loginbotom.setText("Login");
+        loginbotom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                loginbotomActionPerformed(evt);
             }
         });
 
@@ -99,7 +99,7 @@ public class inicio extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton2)
+                        .addComponent(loginbotom)
                         .addGap(196, 196, 196))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,7 +132,7 @@ public class inicio extends javax.swing.JFrame {
                     .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(passusr))
                 .addGap(29, 29, 29)
-                .addComponent(jButton2)
+                .addComponent(loginbotom)
                 .addGap(54, 54, 54)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -171,10 +171,10 @@ public class inicio extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void loginbotomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginbotomActionPerformed
         controller in = new controller();
         in.consultar(nameusr.getText(), passusr.getText(), this);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_loginbotomActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,7 +216,6 @@ public class inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -224,6 +223,7 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton loginbotom;
     private javax.swing.JTextField nameusr;
     private javax.swing.JPasswordField passusr;
     // End of variables declaration//GEN-END:variables
