@@ -4,6 +4,7 @@ package funtion;
 //con la BD
 import java.sql.*;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 //import java.util.*;
 
 public class controller {
@@ -72,7 +73,7 @@ private static Connection con;
         consusr.consultauser(con, usuarioin, passin, frameParaCerrar);    
     } 
     
-    public void consultageneral(String tablasearch) {
+    public void consultageneral(String tablasearch) throws SQLException {
       
         con=null;
         try{

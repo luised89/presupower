@@ -6,6 +6,10 @@ package screen;
 
 import funtion.busquedas;
 import funtion.controller;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -167,7 +171,11 @@ public class materiales extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        
         controller in = new controller();
-        in.consultageneral(tablamateriales);
+        try {
+            in.consultageneral(tablamateriales);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(this, "Error al consultar: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
