@@ -25,7 +25,7 @@ public class materiales extends javax.swing.JFrame {
     }
     
     String usrt = busquedas.usuarioEncontrado;
-    String tablamateriales = "materiales";
+    String tablamateriales = "materiales"; //ahora existe esta tabla
     
     /**
      * This method is called from within the constructor to initialize the form.
