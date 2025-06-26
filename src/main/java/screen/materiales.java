@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package screen;
 
 import component.material;
@@ -26,6 +23,7 @@ public class materiales extends javax.swing.JFrame {
     
     public materiales() {
         initComponents();
+        this.mngr = new manager();
     }
     
     String usrt = busquedas.usuarioEncontrado;
