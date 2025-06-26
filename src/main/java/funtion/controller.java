@@ -26,6 +26,26 @@ private static Connection con;
     // en su caso deben poner en URL, localhost o la ip
     //del servidor 
 
+    //####### GENERAL CONECTION##################
+    
+    
+        public String conection() {
+        try {
+            Class.forName(driver);
+            con = DriverManager.getConnection(url, user, pass);
+            if (con != null) {
+                System.out.println("Conexion establecida");
+                return "conexion";
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println("Error de conexion" + e);
+            return "fallo";
+        }
+        return null;
+    }
+    
+        
+
     public void conectar(String nombre, String correo, String pss) {
       
         con=null;
@@ -95,4 +115,21 @@ private static Connection con;
         
     }
     
-}
+    
+    
+    
+    /**########################
+     * Ejecuta una consulta SQL de actualización (INSERT, UPDATE, DELETE)
+     * @param sql La consulta SQL a ejecutar
+     * @return Cantidad de filas afectadas
+     * @throws SQLException Si ocurre un error en la base de datos
+     */
+    public int executeUpdate(String sql) throws SQLException {
+        try (Statement stmt = con.createStatement()) {
+            return stmt.executeUpdate(sql);
+        }
+    }
+    
+    
+    
+    }

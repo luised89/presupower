@@ -60,6 +60,11 @@ public class inicio extends javax.swing.JFrame {
         nameusr.setForeground(new java.awt.Color(240, 240, 240));
         nameusr.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         nameusr.setText("Nombre");
+        nameusr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameusrActionPerformed(evt);
+            }
+        });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/viñeta.PNG"))); // NOI18N
 
@@ -175,6 +180,10 @@ public class inicio extends javax.swing.JFrame {
         controller in = new controller();
         in.consultar(nameusr.getText(), passusr.getText(), this);
     }//GEN-LAST:event_loginbotomActionPerformed
+
+    private void nameusrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameusrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameusrActionPerformed
 
     /**
      * @param args the command line arguments
