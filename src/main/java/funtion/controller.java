@@ -2,9 +2,21 @@ package funtion;
 
 //Es relevante importar el driver que permite lograr la conexión
 //con la BD
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonNull;
+import com.google.gson.JsonObject;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.*;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import javax.swing.Timer;
 //import java.util.*;
 
 public class controller {
@@ -115,6 +127,92 @@ private static Connection con;
         
     }
     
+    
+    public void descargarApusComoJson() throws SQLException {
+    Connection con = null;
+    try {
+        Class.forName(driver);
+        con = DriverManager.getConnection(url, user, pass);
+        
+        if (con != null) {
+            System.out.println("Conexión establecida");
+            
+            // 1. Obtener datos de la tabla APUS
+            String query = "SELECT * FROM apus";
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            
+            // 2. Convertir ResultSet a JSON
+            JsonArray jsonArray = new JsonArray();
+            ResultSetMetaData metaData = rs.getMetaData();
+            int columnCount = metaData.getColumnCount();
+            
+            while (rs.next()) {
+                JsonObject jsonObject = new JsonObject();
+                for (int i = 1; i <= columnCount; i++) {
+                    String columnName = metaData.getColumnName(i);
+                    Object value = rs.getObject(i);
+                    if (value != null) {
+                        jsonObject.addProperty(columnName, value.toString());
+                    } else {
+                        jsonObject.add(columnName, JsonNull.INSTANCE);
+                    }
+                }
+                jsonArray.add(jsonObject);
+            }
+            
+            // 3. Definir ruta del archivo
+            String resourcesPath = System.getProperty("user.dir") + File.separator + "src" + 
+                                 File.separator + "main" + File.separator + "resources" + 
+                                 File.separator + "lista_de_apus.json";
+            
+            // 4. Eliminar archivo existente si existe
+            File jsonFile = new File(resourcesPath);
+            if (jsonFile.exists()) {
+                if (!jsonFile.delete()) {
+                    throw new IOException("No se pudo eliminar el archivo existente");
+                }
+            }
+            
+            // 5. Guardar el nuevo archivo
+            try (FileWriter fileWriter = new FileWriter(jsonFile)) {
+                new GsonBuilder()
+                    .setPrettyPrinting()
+                    .create()
+                    .toJson(jsonArray, fileWriter);
+            }
+            
+            // 6. Mostrar mensaje temporal
+            JDialog messageDialog = new JDialog();
+            messageDialog.setTitle("Información");
+            messageDialog.setSize(300, 100);
+            messageDialog.setLocationRelativeTo(null);
+            messageDialog.setUndecorated(true);
+            
+            JLabel messageLabel = new JLabel("Datos descargados", SwingConstants.CENTER);
+            messageDialog.add(messageLabel);
+            messageDialog.setVisible(true);
+            
+            Timer timer = new Timer(3500, e -> messageDialog.dispose());
+            timer.setRepeats(false);
+            timer.start();
+        }
+    } catch (ClassNotFoundException | SQLException | IOException e) {
+        System.out.println("Error: " + e);
+        JOptionPane.showMessageDialog(null, 
+            "Error al descargar datos: " + e.getMessage(), 
+            "Error", 
+            JOptionPane.ERROR_MESSAGE);
+    } finally {
+        if (con != null) {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                System.out.println("Error al cerrar conexión: " + e);
+            }
+        }
+    }
+}
     
     
     

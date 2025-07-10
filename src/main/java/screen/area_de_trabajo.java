@@ -4,7 +4,29 @@
  */
 package screen;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.mysql.cj.result.Row;
 import funtion.busquedas;
+import java.awt.BorderLayout;
+import java.io.File;
+import java.io.FileWriter;
+import javax.swing.JDialog;
+import javax.swing.JFileChooser;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.SwingWorker;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 /**
  *
@@ -37,7 +59,7 @@ String usrt = busquedas.usuarioEncontrado;
         jLabel6 = new javax.swing.JLabel();
         usrX = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        nvop = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -82,7 +104,12 @@ String usrt = busquedas.usuarioEncontrado;
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presu.PNG"))); // NOI18N
+        nvop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presu.PNG"))); // NOI18N
+        nvop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nvopActionPerformed(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Precio.PNG"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +161,7 @@ String usrt = busquedas.usuarioEncontrado;
                             .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(45, 45, 45)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
+                            .addComponent(nvop)
                             .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(45, 45, 45)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,7 +202,7 @@ String usrt = busquedas.usuarioEncontrado;
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(nvop, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,6 +262,133 @@ String usrt = busquedas.usuarioEncontrado;
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void nvopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nvopActionPerformed
+    
+        // Crear el diálogo de carga (pero no mostrarlo aún)
+    JDialog loadingDialog = new JDialog();
+    loadingDialog.setTitle("Procesando archivo");
+    loadingDialog.setSize(300, 100);
+    loadingDialog.setLocationRelativeTo(null);
+    loadingDialog.setModal(false);
+    loadingDialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+    
+    JPanel panel = new JPanel(new BorderLayout());
+    panel.add(new JLabel("Cargando archivo Excel...", SwingConstants.CENTER), BorderLayout.CENTER);
+    JProgressBar progressBar = new JProgressBar();
+    progressBar.setIndeterminate(true);
+    panel.add(progressBar, BorderLayout.SOUTH);
+    
+    loadingDialog.add(panel);
+    
+    // Usar SwingWorker para no bloquear la interfaz
+    SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
+        @Override
+        protected Void doInBackground() throws Exception {
+            try {
+                // Primero mostrar el selector de archivos
+                JFileChooser fileChooser = new JFileChooser();
+                fileChooser.setDialogTitle("Seleccionar archivo Excel");
+                fileChooser.setFileFilter(new FileNameExtensionFilter("Archivos Excel", "xls", "xlsx"));
+                
+                int returnValue = fileChooser.showOpenDialog(null);
+                if (returnValue != JFileChooser.APPROVE_OPTION) {
+                    return null; // Usuario canceló
+                }
+                
+                // Ahora mostrar el diálogo de carga
+                SwingUtilities.invokeLater(() -> loadingDialog.setVisible(true));
+                
+                File selectedFile = fileChooser.getSelectedFile();
+                
+                // Leer archivo Excel
+                Workbook workbook = WorkbookFactory.create(selectedFile);
+                org.apache.poi.ss.usermodel.Sheet sheet = workbook.getSheetAt(0);
+                
+                // Procesar columna A
+                JsonArray jsonArray = new JsonArray();
+                for (org.apache.poi.ss.usermodel.Row row : sheet) {
+                    Cell cell = row.getCell(0);
+                    if (cell != null) {
+                        switch (cell.getCellType()) {
+                            case STRING:
+                                jsonArray.add(cell.getStringCellValue());
+                                break;
+                            case NUMERIC:
+                                if (DateUtil.isCellDateFormatted(cell)) {
+                                    jsonArray.add(cell.getDateCellValue().toString());
+                                } else {
+                                    jsonArray.add(cell.getNumericCellValue());
+                                }
+                                break;
+                            case BOOLEAN:
+                                jsonArray.add(cell.getBooleanCellValue());
+                                break;
+                            default:
+                                jsonArray.add("");
+                        }
+                    }
+                }
+                
+                // Crear objeto JSON
+                JsonObject jsonObject = new JsonObject();
+                jsonObject.add("columnaA", jsonArray);
+                
+                // Ruta del archivo JSON
+                String resourcesPath = System.getProperty("user.dir") + File.separator + "src" + 
+                                     File.separator + "main" + File.separator + "resources" + 
+                                     File.separator + "datos.json";
+                
+                // Verificar si el archivo existe y preguntar por reemplazo
+                File jsonFile = new File(resourcesPath);
+                if (jsonFile.exists()) {
+                    // No necesitamos preguntar, lo reemplazamos directamente
+                    jsonFile.delete(); // Eliminar el archivo existente
+                }
+                
+                // Guardar el nuevo archivo
+                try (FileWriter fileWriter = new FileWriter(resourcesPath)) {
+                    new Gson().toJson(jsonObject, fileWriter);
+                }
+                
+                JOptionPane.showMessageDialog(null, 
+                    "Archivo procesado y guardado", 
+                    "Proceso completado", 
+                    JOptionPane.INFORMATION_MESSAGE);
+                
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, 
+                    "Error al procesar el archivo: " + ex.getMessage(), 
+                    "Error", 
+                    JOptionPane.ERROR_MESSAGE);
+                ex.printStackTrace();
+            } finally {
+                // Cerrar el diálogo de carga en el EDT
+                SwingUtilities.invokeLater(() -> loadingDialog.dispose());
+            }
+            return null;
+        }
+    };
+    
+    worker.execute();
+
+        
+    //##############cambio de frame
+    
+    try {
+            // Crear y mostrar nuevo frame
+            generator nuevoFrame = new generator();
+            nuevoFrame.setLocationRelativeTo(null); // Centrar en pantalla
+            nuevoFrame.setVisible(true);
+
+            // Cerrar el frame actual
+            this.dispose();
+        } catch (Exception e) {
+
+        }
+    
+    
+    }//GEN-LAST:event_nvopActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -272,7 +426,6 @@ String usrt = busquedas.usuarioEncontrado;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -285,6 +438,7 @@ String usrt = busquedas.usuarioEncontrado;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton nvop;
     private javax.swing.JLabel usrX;
     // End of variables declaration//GEN-END:variables
 }
