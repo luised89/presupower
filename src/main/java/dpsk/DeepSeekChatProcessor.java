@@ -7,6 +7,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.concurrent.TimeUnit;
+import screen.iniciarExcel;
 
 public class DeepSeekChatProcessor {
     private static final String API_URL = "https://api.deepseek.com/v1/chat/completions";
@@ -14,9 +15,11 @@ public class DeepSeekChatProcessor {
     private final OkHttpClient client;
     private final Gson gson;
     private final JLabel statusLabel;
+    private JFrame parentFrame;
     
-    public DeepSeekChatProcessor(JLabel statusLabel) throws IOException {
+    public DeepSeekChatProcessor(JLabel statusLabel, JFrame parentFrame) throws IOException {
         this.statusLabel = statusLabel;
+        this.parentFrame = parentFrame;
         this.apiKey = loadApiKeyFromFile();
         System.out.println("API Key status: " + (apiKey != null && !apiKey.isEmpty() ? "OK" : "FAILED"));
         
@@ -64,8 +67,28 @@ public class DeepSeekChatProcessor {
                 e.printStackTrace();
                 mostrarMensajeTemporal("Error: " + e.getMessage(), 5000);
             } finally {
-                System.out.println("=== PROCESS COMPLETED ===");
-            }
+                System.out.println("=== INICIANDO CREACION DE EXCEL ===");
+                
+                //#################
+ try {
+                    // Crear y mostrar nuevo frame
+                    SwingUtilities.invokeLater(() -> {
+                        iniciarExcel nuevoFrame = new iniciarExcel();
+                        nuevoFrame.setLocationRelativeTo(null);
+                        nuevoFrame.setVisible(true);
+
+                        // Cerrar el frame padre si existe
+                        if (parentFrame != null && parentFrame.isDisplayable()) {
+                            parentFrame.dispose();
+                        }
+                    });
+                } catch (Exception e) {
+                    System.err.println("ERROR AL CREAR NUEVO FRAME:");
+                    e.printStackTrace();
+                    mostrarMensajeTemporal("Error al abrir nueva ventana: " + e.getMessage(), 5000);
+                }
+                
+                    }
         }).start();
     }
 
@@ -86,10 +109,10 @@ public class DeepSeekChatProcessor {
             "ARCHIVO datos.json:\n%s\n\n" +
             "ARCHIVO lista_de_apus.json:\n%s\n\n" +
             "INSTRUCCIONES:\n" +
-            "1. Para cada elemento en 'columnaA' de datos.json, encuentra la mejor coincidencia en 'descripcion' de lista_de_apus.json\n" +
+            "1. Para cada elemento en 'Descripcion' de datos.json, encuentra la mejor coincidencia en 'descripcion' de lista_de_apus.json\n" +
             "2. Devuelve UNICAMENTE un JSON con este formato:\n" +
-            "[{\"original\": \"texto original\", \"id\": \"id coincidente\"}]\n" +
-            "3. Si no hay coincidencia, usa \"04\" como ID\n" +
+            "[{\"Descripcion\": \"texto original\", \"Cantidad\": \"cantidades de 'datos'\", \"code\": \"code coincidente\"}]\n" +
+            "3. Si no hay coincidencia, usa \"04\" como code\n" +
             "4. No incluyas explicaciones, solo el JSON requerido",
             datosJson, apusJson
         );

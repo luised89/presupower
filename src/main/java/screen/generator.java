@@ -5,6 +5,7 @@
 package screen;
 
 import dpsk.DeepSeekChatProcessor;
+import tablas.PresupuestoProcessor;
 import funtion.controller;
 import java.io.IOException;
 import java.sql.SQLException;
@@ -180,7 +181,7 @@ public class generator extends javax.swing.JFrame {
                     configurarEstadoLabel();
                     }
         
-                DeepSeekChatProcessor processor = new DeepSeekChatProcessor(lblEstado);
+                DeepSeekChatProcessor processor = new DeepSeekChatProcessor(lblEstado, this);
                 processor.procesarArchivos();
                 } catch (IOException ex) {
                     lblEstado.setText("Error inicializando: " + ex.getMessage());
@@ -194,8 +195,7 @@ public class generator extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error al consultar: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
         
-        
-        
+
         
         
     }//GEN-LAST:event_jButton2ActionPerformed

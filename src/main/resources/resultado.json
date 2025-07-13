@@ -1,8 +1,7 @@
 ```json
 [
-  {"original": "Salida para iluminacion en tuberia pvc", "id": "305"},
-  {"original": "salida para tomacorriente emt", "id": "352"},
-  {"original": "tuberia de 1pul sch40", "id": "336"},
-  {"original": "tableco trifasico 18 ctos", "id": "285"}
+  {"Descripcion": "salida para iluminacion led", "Cantidad": 2.0, "code": "E769842-"},
+  {"Descripcion": "salida para toma gfci pvc", "Cantidad": 1.0, "code": "20D6EE03-"},
+  {"Descripcion": "breaker 20 amp", "Cantidad": 2.0, "code": "12A5B4D1-"}
 ]
 ```

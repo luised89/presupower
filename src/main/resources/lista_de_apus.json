@@ -1,1222 +1,1466 @@
 [
   {
-    "id": "275",
+    "id": "519",
     "descripcion": "Retiro de caja para interruptor en caja moldeada 3x250A",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "B399EA4-"
   },
   {
-    "id": "276",
+    "id": "520",
     "descripcion": "Retiro de acometida 3#1/0(F)+1#2(N)+1#8(T)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2D39E71-"
   },
   {
-    "id": "277",
+    "id": "521",
     "descripcion": "Retiro de acometida 3#8(F)+1#8(N)+1#10(T)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "E47DA25-"
   },
   {
-    "id": "278",
+    "id": "522",
     "descripcion": "Retiro de acometida 4(3#500(F)+1#500(N)+1#1/0(T))",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3B73F99E-"
   },
   {
-    "id": "279",
+    "id": "523",
     "descripcion": "Retiro de acometida 4(3#500(F)+1#500(N)+1#1/0(T)) x 10m",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3B73F99E+10-"
   },
   {
-    "id": "280",
+    "id": "524",
     "descripcion": "Retiro de acometida 3#10(F)+1#10(N)+1#10(T)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1AADBAF6-"
   },
   {
-    "id": "281",
+    "id": "525",
     "descripcion": "Retiro cajas de paso en tanque de agua potable.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "AE6EC23-"
   },
   {
-    "id": "282",
+    "id": "526",
     "descripcion": "Retiro de tablero trif�sico 12 circuitos.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2F32F435-"
   },
   {
-    "id": "283",
+    "id": "527",
     "descripcion": "Retiro de salidas de tomacorrientes e iluminaci�n existentes",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "1564C36B-"
   },
   {
-    "id": "284",
+    "id": "528",
     "descripcion": "Suministro e instalaci�n de tablero General de Distribuci�n (TGD) seg�n diagrama unifilar",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "20F92DB3-"
   },
   {
-    "id": "285",
+    "id": "529",
     "descripcion": "Suministro e instalaci�n de tablero trif�sico 18 circuitos con espacio para totalizador TWC",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "182BF30B-"
   },
   {
-    "id": "286",
+    "id": "530",
     "descripcion": "Suministro e instalaci�n de interruptor autom�tico 1x20A enchufable",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "12A5B4D1-"
   },
   {
-    "id": "287",
+    "id": "531",
     "descripcion": "Suministro e instalaci�n de interruptor autom�tico 3x40A en caja moldeada",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "34F286E3-"
   },
   {
-    "id": "288",
+    "id": "532",
     "descripcion": "Suministro e instalaci�n de acometida 3#1/0(F)+1#1/0(N)+1#6(T) de cobre",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2CE82924-"
   },
   {
-    "id": "289",
+    "id": "533",
     "descripcion": "Acometida 3#8(F)+1#8(N)+1#10(T) de cobre",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "165F5D86-"
   },
   {
-    "id": "290",
+    "id": "534",
     "descripcion": "Suministro e instalaci�n de alimentador 3#8(F)+1#8(T) de cobre sin bornas",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "165F5D87-"
   },
   {
-    "id": "291",
+    "id": "535",
     "descripcion": "Suministro e instalaci�n de acometida 3#8(F)+1#10(N)+1#10(T) de cobre",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "165F5D88-"
   },
   {
-    "id": "292",
+    "id": "536",
     "descripcion": "Suministro e instalaci�n de alimentador 3#10(F)+1#12(N)+1#12(T) de cobre",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "30D57FC1-"
   },
   {
-    "id": "293",
+    "id": "537",
     "descripcion": "Suministro e instalaci�n de alimentador 1#12(F)+1#12(N)+1#12(T) de cobre",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2A75A7A-"
   },
   {
-    "id": "294",
+    "id": "538",
     "descripcion": "Suministro e instalaci�n de alimentador 1#10(F)+1#10(N)+1#12(T) de cobre",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2A75A7B-"
   },
   {
-    "id": "295",
+    "id": "539",
     "descripcion": "\"Suministro e instalaci�n de tuber�a 1�1\"\" PVC tipo A (T-BAP), incluye regata para instalaci�n en piso. Incluye tuber�as PVC tipo A y dem�s accesorios para su correcta instalaci�n,  funcionamiento y se�alizaci�n.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "307EA178-"
   },
   {
-    "id": "296",
+    "id": "540",
     "descripcion": "\"Suministro e instalaci�n de tuber�a EMT 3/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "20D1A895-"
   },
   {
-    "id": "297",
+    "id": "541",
     "descripcion": "Suministro e instalaci�n de canaleta met�lica 10x5 cm con separador. Incluye canaleta y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "97DEC52-"
   },
   {
-    "id": "298",
+    "id": "542",
     "descripcion": "Suministro e instalaci�n de salida tomacorriente doble monof�sica extractor.  Incluye caja 5800, conectores, cable #12 AWG de cobre, tuber�a PVC SCH40.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "140743BF-"
   },
   {
-    "id": "299",
+    "id": "543",
     "descripcion": "Suministro e instalaci�n de salida tomacorriente doble monof�sica extractor.  Incluye caja 5800, conectores, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n. (sin aparato)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1C70FA60-"
   },
   {
-    "id": "300",
+    "id": "544",
     "descripcion": "Suministro e instalaci�n de tomacorriente doble monof�sica polo a tierra. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC 4 metros y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "31B2542C-"
   },
   {
-    "id": "301",
+    "id": "545",
     "descripcion": "Suministro e instalaci�n de tomacorriente doble monof�sica polo a tierra. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n. (sin aparato)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3AB56E40-"
   },
   {
-    "id": "302",
+    "id": "546",
     "descripcion": "Suministro e instalaci�n de salida interruptor sencillo. Incluye interruptor. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC tipo A y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.  (sin aparato)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1986EAB3-"
   },
   {
-    "id": "303",
+    "id": "547",
     "descripcion": "Suministro e instalaci�n de salida interruptor sencillo. Incluye interruptor. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n. (sin aparato)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1BB7370-"
   },
   {
-    "id": "304",
+    "id": "548",
     "descripcion": "Suministro e instalaci�n de salida interruptor doble. Incluye interruptor. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.  ( sin aparato)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2A7256AD-"
   },
   {
-    "id": "305",
+    "id": "549",
     "descripcion": "\"Suministro e instalaci�n de salida para roseta. Incluye roseta de 4\"\"en porcelana. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC tipo A y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "C8A8E96-"
   },
   {
-    "id": "306",
+    "id": "550",
     "descripcion": "Suministro e instalaci�n de salida para l�mpara LED EMERGENCIA 48 PCS 2,8 W Sylvania. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC tipo A y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "E769842-"
   },
   {
-    "id": "307",
+    "id": "551",
     "descripcion": "Suministro e instalaci�n de salida luminaria lineal 20 W. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1D88FCEF-"
   },
   {
-    "id": "308",
+    "id": "552",
     "descripcion": "Suministro e instalaci�n de Salida aplique. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "C1D1F7D-"
   },
   {
-    "id": "309",
+    "id": "553",
     "descripcion": "Suministro e instalaci�n de salida luminaria herm�tica. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC tipo A y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3033662F-"
   },
   {
-    "id": "310",
+    "id": "554",
     "descripcion": "Suministro e instalaci�n de salida luminaria herm�tica. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "14D86AED-"
   },
   {
-    "id": "311",
+    "id": "555",
     "descripcion": "Suministro e instalaci�n de salida luminaria panel led en techo. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC tipo A y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "23A642FA-"
   },
   {
-    "id": "312",
+    "id": "556",
     "descripcion": "Suministro e instalaci�n de salida luminaria panel led en techo. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "229CF12D-"
   },
   {
-    "id": "313",
+    "id": "557",
     "descripcion": "Suministro e instalaci�n de salida iluminaci�n espejo. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC tipo A y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "CF5A4DF-"
   },
   {
-    "id": "314",
+    "id": "558",
     "descripcion": "Suministro e instalaci�n de salida iluminaci�n espejo. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "377C8D31-"
   },
   {
-    "id": "315",
+    "id": "559",
     "descripcion": "Suministro e instalaci�n de salida sensor de presencia. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a PVC tipo A y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n. (sin aparato)",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "11FC98CD-"
   },
   {
-    "id": "316",
+    "id": "560",
     "descripcion": "Suministro e instalaci�n de salida sensor de presencia. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a SCH 40 y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "16B7AF49-"
   },
   {
-    "id": "317",
+    "id": "561",
     "descripcion": "Suministro e instalaci�n de alimentador 1#12(F)+1#12(N)+1#12(T) de cobre entre tomacorriente secador de manos *. Incluye cable #12 AWG de cobre y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2E5A15E7-"
   },
   {
-    "id": "318",
+    "id": "562",
     "descripcion": "Suministro e instalaci�n de tomacorriente doble monof�sica polo a tierra. Incluye aparato y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "185615BA-"
   },
   {
-    "id": "319",
+    "id": "563",
     "descripcion": "Suministro e instalaci�n de tomacorriente doble monof�sica polo a tierra GFCI. Incluye aparato y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "20D6EE03-"
   },
   {
-    "id": "320",
+    "id": "564",
     "descripcion": "Suministro e instalaci�n de interruptor sencillo. Incluye aparato y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "107EDD33-"
   },
   {
-    "id": "321",
+    "id": "565",
     "descripcion": "Suministro e instalaci�n de interruptor doble. Incluye aparato y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "33B4D718-"
   },
   {
-    "id": "322",
+    "id": "566",
     "descripcion": "\"Suministro e instalaci�n de roseta de 4\"\" de porcelana. Incluye roseta de 4\"\" de porcelana y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "145A0ECD-"
   },
   {
-    "id": "323",
+    "id": "567",
     "descripcion": "Suministro e instalaci�n de l�mpara LED EMERGENCIA 48 PCS 2,8 W Sylvania. Incluye tapa salida de cord�n, cable 3#16 AWG de cobre",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "E82DB5E-"
   },
   {
-    "id": "324",
+    "id": "568",
     "descripcion": "Suministro e instalaci�n de l�mpara LED EMERGENCIA R2 2 W Sylvania. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "12F23555-"
   },
   {
-    "id": "325",
+    "id": "569",
     "descripcion": "Suministro e instalaci�n de l�mpara LED EMERGENCIA R3 DESIGN 2 W Sylvania. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "6E73529-"
   },
   {
-    "id": "326",
+    "id": "570",
     "descripcion": "Suministro e instalaci�n de luminaria lineal LED LINEAL MINI CONTINUUM 20 W Sylvania. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2F3E06D5-"
   },
   {
-    "id": "327",
+    "id": "571",
     "descripcion": "Suministro e instalaci�n de luminaria herm�tica LED ECO PROOF 36 W, 6500 �K Sylvania. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "EC64CDE-"
   },
   {
-    "id": "328",
+    "id": "572",
     "descripcion": "Suministro e instalaci�n de luminaria LED PANEL SOBREPONER RD 24 W, 6500 �K Sylvania. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "278E96BB-"
   },
   {
-    "id": "329",
+    "id": "573",
     "descripcion": "Suministro e instalaci�n de tapa tipo intemperie para toma GFCI. Incluye tapa tipo intemperie y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3ABE3B01-"
   },
   {
-    "id": "330",
+    "id": "574",
     "descripcion": "Suministro e instalaci�n de caja 30x30 cm puesta a tierra con tapa y marco",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "663ACA1-"
   },
   {
-    "id": "331",
+    "id": "575",
     "descripcion": "\"Suministro e instalaci�n de varilla de puesta a tierra 5/8\"\"x8\u0027 de cobre. Incluye soldadura cadweld 90 gr, molde y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2895E0B2-"
   },
   {
-    "id": "332",
+    "id": "576",
     "descripcion": "Suministro e instalaci�n de rack. Incluye gabinete y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2218AB07-"
   },
   {
-    "id": "333",
+    "id": "577",
     "descripcion": "\"Suministro e instalaci�n de tuber�a EMT 2\"\" \"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "27BF3440-"
   },
   {
-    "id": "334",
+    "id": "578",
     "descripcion": "\"Suministro e instalaci�n de salida doble voz y datos en canaleta. Incluye tuber�a EMT 3/4\"\" caja de conexi�n, cable UTP cat. 6A, toma doble para datos cat 6A y dem�s accesrios para su correcta instalaci�n, funcionamiento y se�alizaci�n.\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "104A3C67-"
   },
   {
-    "id": "335",
+    "id": "579",
     "descripcion": "Suministro e instalaci�n de salida doble voz y datos con tuber�a. Incluye toma doble cat. 6A. Incluye caja de conexi�n, cable UTP cat. 6A, toma doble para datos cat 6A y dem�s accesrios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "937EEB2-"
   },
   {
-    "id": "336",
+    "id": "580",
     "descripcion": "\"Suministro e instalaci�n de tuber�a PVC SCH40 1\"\".\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "3A4A8F88-"
   },
   {
-    "id": "337",
+    "id": "581",
     "descripcion": "Suministro e instalaci�n de cable UTP cat 6A. Incluye cable UTP cat 6A y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "339E8F9E-"
   },
   {
-    "id": "338",
+    "id": "582",
     "descripcion": "\"Suministro e instalaci�n de tuber�a PVC SCH40 1-1/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2F9A9059-"
   },
   {
-    "id": "339",
+    "id": "583",
     "descripcion": "Suministro e instalaci�n de cable HDMI L\u003d10m.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "25DF6E95-"
   },
   {
-    "id": "340",
+    "id": "584",
     "descripcion": "Suministro e instalaci�n de salida con cable HDMI",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "378AC041-"
   },
   {
-    "id": "341",
+    "id": "585",
     "descripcion": "Suministro e instalaci�n de caja para amplificador TDT. Incluye caja de 0,50x0,50m fondo de madera y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "39B9C89B-"
   },
   {
-    "id": "342",
+    "id": "586",
     "descripcion": "\"Suministro e instalaci�n de m�stil para antena de TV 1-1/4\"\" IMC. Incluye tubo IMC 1-1/4\"\" y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "9AF4241-"
   },
   {
-    "id": "343",
+    "id": "587",
     "descripcion": "Suministro e instalaci�n de antena multicanal para TDT. Incluye antena multicanal y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1213F85F-"
   },
   {
-    "id": "344",
+    "id": "588",
     "descripcion": "Suministro e instalaci�n de amplificador para TV. Incluye amplificador para TV TDT y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "20FAFD0A-"
   },
   {
-    "id": "345",
+    "id": "589",
     "descripcion": "Suministro e instalaci�n de salida para TV. Incluye tuber�a SCH 40, cable coaxial y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3326CB28-"
   },
   {
-    "id": "346",
+    "id": "590",
     "descripcion": "Suministro e instalaci�n de toma coaxial para TV. Incluye tomacoaxial y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3A2ACF82-"
   },
   {
-    "id": "347",
+    "id": "591",
     "descripcion": "\"Suministro e instalaci�n de tuber�a EMT 1\"\"\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "15F46B82-"
   },
   {
-    "id": "348",
+    "id": "592",
     "descripcion": "Suministro e instalaci�n de salida para CCTV. Incluye tuber�a SCH 40, cable UTP cat 6A y demas accesorios para su correcta instalaci�n, funcionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3141EA9A-"
   },
   {
-    "id": "349",
+    "id": "593",
     "descripcion": "\"Suministro e instalaci�n de tuber�a EMT 1-1/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "16597CEC-"
   },
   {
-    "id": "350",
+    "id": "594",
     "descripcion": "Suministro e instalaci�n de salida Iluminaci�n. Incliye tuber�a EMT, accesorios, caja de conexiones, cableado, se�alizaci�n y dem�s elementos para su puesta en servicio.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1B56132A-"
   },
   {
-    "id": "351",
+    "id": "595",
     "descripcion": "Suministro e instalaci�n de salida para L�mpara emergencia. Incliye tuber�a EMT, accesorios, caja de conexiones, cableado, se�alizaci�n y dem�s elementos para su puesta en servicio.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "184F8D74-"
   },
   {
-    "id": "352",
+    "id": "596",
     "descripcion": "Suministro e instalaci�n de salida para Tomacorriente doble monof�sica. Incliye tuber�a EMT, accesorios, caja de conexiones, cableado, se�alizaci�n y dem�s elementos para su puesta en servicio.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1ABE22FC-"
   },
   {
-    "id": "353",
+    "id": "597",
     "descripcion": "Suministro e instalaci�n de salida para Tomacorriente GFCI. Incliye tuber�a EMT, accesorios, caja de conexiones, cableado, se�alizaci�n y dem�s elementos para su puesta en servicio.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "3889CEFB-"
   },
   {
-    "id": "354",
+    "id": "598",
     "descripcion": "Suministro e instalaci�n de salida para Toma bif�sica. Incliye tuber�a EMT, accesorios, caja de conexiones, cableado, se�alizaci�n y dem�s elementos para su puesta en servicio.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1F3CEE8-"
   },
   {
-    "id": "355",
+    "id": "599",
     "descripcion": "Suministro e instalaci�n de salida para Toma trif�sica. Incliye tuber�a EMT, accesorios, caja de conexiones, cableado, se�alizaci�n y dem�s elementos para su puesta en servicio.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "5DB0FA8-"
   },
   {
-    "id": "356",
+    "id": "600",
     "descripcion": "Planta de emergencia 75KvA",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1CF87BDE-"
   },
   {
-    "id": "357",
+    "id": "601",
     "descripcion": "Suministro e instalaci�n de cable de aluminio 3x2 ACSR",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "33C6702C-"
   },
   {
-    "id": "358",
+    "id": "602",
     "descripcion": "Suministro e instalaci�n de estructura trif�sica tangencial en bandera LA 202",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "10A52BD2-"
   },
   {
-    "id": "359",
+    "id": "603",
     "descripcion": "Suministro e instalaci�n de estructura trif�sica en retensi�n final de circuito 15 kV LA 211",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2E394109-"
   },
   {
-    "id": "360",
+    "id": "604",
     "descripcion": "Suministro e instalaci�n de poste de concreto 12 m 510 kg. Incluye transporte izaje, excavaci�n y cimentaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "5ABED62-"
   },
   {
-    "id": "361",
+    "id": "605",
     "descripcion": "Suministro e instalaci�n de poste de concreto 12 m 1050 kg. Incluye transporte izaje, excavaci�n y cimentaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "367010D-"
   },
   {
-    "id": "362",
+    "id": "606",
     "descripcion": "Suministro e instalaci�n de poste de Estrutura CTU510-2 para transformador en H. Incluye postes, vigas, crucetas, cortacircuitos, pararrayos y herrajes.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "22B31E24-"
   },
   {
-    "id": "363",
+    "id": "607",
     "descripcion": "Suministro e instalaci�n de interruptor autom�tico 2x20A 2x30A enchufable",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "38EC7547-"
   },
   {
-    "id": "364",
+    "id": "608",
     "descripcion": "Suministro e instalaci�n de interruptor autom�tico 3x20A enchufable",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "B7C2560-"
   },
   {
-    "id": "365",
+    "id": "609",
     "descripcion": "Caja de paso 20x20",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2FE2D2E5-"
   },
   {
-    "id": "366",
+    "id": "610",
     "descripcion": "Suministro e instalaci�n de DPS TIPO 2, 3P, 40kA 8/20.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "27452C3D-"
   },
   {
-    "id": "367",
+    "id": "611",
     "descripcion": "\"Suministro e instalaci�n de 1�4\"\" IMC. Incluye tuber�a, capacete, uniones, cinta de se�alizaci�n, cinta de acero inoxidable y dem�s elementos para su correta instalaci�n.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "23AB3C8A-"
   },
   {
-    "id": "368",
+    "id": "612",
     "descripcion": "\"Suministro e instalaci�n de ductos  7�2\"\" PVC redes de BT. Incluye tuber�a, campanas terminales, tapones, cinta de se�alizaci�n, excavaci�n y retiro de escombros.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "142983C3-"
   },
   {
-    "id": "369",
+    "id": "613",
     "descripcion": "\"Suministro e instalaci�n de ductos  6�2\"\" PVC redes de BT. Incluye tuber�a, campanas terminales, tapones, cinta de se�alizaci�n, excavaci�n y retiro de escombros.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "21675DF7-"
   },
   {
-    "id": "370",
+    "id": "614",
     "descripcion": "\"Suministro e instalaci�n de coraza Liquid Tide �2\"\". Incluye coraza, terminales, elementos de soporte y se�alizaci�n\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "113637DF-"
   },
   {
-    "id": "371",
+    "id": "615",
     "descripcion": "\"Suministro e instalaci�n de coraza Liquid Tide ؾ\"\". Incluye coraza, terminales, elementos de soporte y se�alizaci�n\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "D7694F4-"
   },
   {
-    "id": "372",
+    "id": "616",
     "descripcion": "Suministro e instalaci�n de caja de inspecci�n CS274. Incluye suministro de 1 tapas, excavaci�n y retiro de escombros.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "226B0DDD-"
   },
   {
-    "id": "373",
+    "id": "617",
     "descripcion": "Suministro e instalaci�n de caja de inspecci�n CS275. Incluye suministro de 1 tapas, excavaci�n y retiro de escombros.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "C803A98-"
   },
   {
-    "id": "374",
+    "id": "618",
     "descripcion": "Suministro e instalaci�n de Acometida 3#350+4/0 Al",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "3266C1B1-"
   },
   {
-    "id": "375",
+    "id": "619",
     "descripcion": "Suministro e instalaci�n de Acometida Acometida 3#350+4/0+1/0T  Al",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "319F0CE-"
   },
   {
-    "id": "376",
+    "id": "620",
     "descripcion": "Suministro e instalaci�n de Acometida 3#6+1#6+1#6T, Al",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "3884F964-"
   },
   {
-    "id": "377",
+    "id": "621",
     "descripcion": "Suministro e instalaci�n de Acometida 3#1/0+1#2+1#6T, Al",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "F0DE30F-"
   },
   {
-    "id": "378",
+    "id": "622",
     "descripcion": "\"Suministro e instalaci�n de malla de puesta a tierra subestaci�n. Incluye 4 varillas CW 5/8\"\"x8\u0027, 40m de cable 2/0 Cu desnudo, soldaduras cadweld.\"",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "2382DBD0-"
   },
   {
-    "id": "379",
+    "id": "623",
     "descripcion": "Suministro e instalaci�n cable 2/0 Cu desnudo.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2E017F27-"
   },
   {
-    "id": "380",
+    "id": "624",
     "descripcion": "Suministro e instalaci�n de barraje equipontencial de 50x10 mm",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "4E35A41-"
   },
   {
-    "id": "381",
+    "id": "625",
     "descripcion": "Puesta a tierra equipos y elementos de subestaci�n. Incluye cable de cobre # 2 desnudo, terminales de ojo, amarres, y dem�s elementos necesarios.",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "DDDA80-"
   },
   {
-    "id": "382",
+    "id": "626",
     "descripcion": "Sumninistro e instalaci�n de transformador 75 kVA, 11400/220 V aislado en eceite. Incluye transporte al lugar del proyecto y izaje a la estructura.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "BD33CD5-"
   },
   {
-    "id": "383",
+    "id": "627",
     "descripcion": "Suministro e instalaci�n de Panel LED 60x60. Incluye cable 3#16 encauchetado, prensaestopa y elementos de conexionado.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1E538B21-"
   },
   {
-    "id": "384",
+    "id": "628",
     "descripcion": "Suministro e instalaci�n de Luminaria Herm�tica LED 2x25W T5 Sylvania. Incluye cable 3#16 encauchetado, prensaestopa y elementos de conexionado.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "28AF4741-"
   },
   {
-    "id": "385",
+    "id": "629",
     "descripcion": "Suministro e instalaci�n de L�mpara emergencia R1 Sylvavia. Incluye cable 3#16 encauchetado, prensaestopa y elementos de conexionado.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2C7342CE-"
   },
   {
-    "id": "386",
+    "id": "630",
     "descripcion": "Suministro e instalaci�n de Luminaria P38328-KIT SOLAR ZD229 60W LI SYLVANIA. Incluye brazo soporte y elementos de conexionado.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1EAD4D5E-"
   },
   {
-    "id": "387",
+    "id": "631",
     "descripcion": "\"Suministro e instalaci�n de afloramiento 2�3\"\" IMC. Incluye tuber�a, 2 capacetes, 2 uniones, 2 curvas, cinta de se�alizaci�n, cinta de acero inoxidable y dem�s elementos para su correta instalaci�n.\"",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "15280E7D-"
   },
   {
-    "id": "388",
+    "id": "632",
     "descripcion": "\"Suministro e instalaci�n de ductos  2�3\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "1CD8FFD0-"
   },
   {
-    "id": "389",
+    "id": "633",
     "descripcion": "\"Suministro e instalaci�n de ductos  1�4+2�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "288741B8-"
   },
   {
-    "id": "390",
+    "id": "634",
     "descripcion": "\"Suministro e instalaci�n de ductos  1�4+4�2\"\" PVC \"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "370BBE6E-"
   },
   {
-    "id": "391",
+    "id": "635",
     "descripcion": "\"Suministro e instalaci�n de ductos  1�4+3�2\"\" PVC \"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "285E1133-"
   },
   {
-    "id": "392",
+    "id": "636",
     "descripcion": "\"Suministro e instalaci�n de ductos  1�3+2�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "3A2EC6FE-"
   },
   {
-    "id": "393",
+    "id": "637",
     "descripcion": "\"Suministro e instalaci�n de ductos  1�4\"\"+1�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "27E326E2-"
   },
   {
-    "id": "394",
+    "id": "638",
     "descripcion": "\"Suministro e instalaci�n de ductos  1�3\"\"+1�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "9AEEDE1-"
   },
   {
-    "id": "395",
+    "id": "639",
     "descripcion": "\"Suministro e instalaci�n de ductos  8�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "216310C1-"
   },
   {
-    "id": "396",
+    "id": "640",
     "descripcion": "\"Suministro e instalaci�n de ductos  3�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "D373774-"
   },
   {
-    "id": "397",
+    "id": "641",
     "descripcion": "\"Suministro e instalaci�n de ductos  5�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "117C350F-"
   },
   {
-    "id": "398",
+    "id": "642",
     "descripcion": "\"Suministro e instalaci�n de ductos  2�2\"\" PVC TDP\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "63A0AB0-"
   },
   {
-    "id": "399",
+    "id": "643",
     "descripcion": "Suministro e instalaci�n de Acometida 2x(3#350+4/0) Al",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "27632337-"
   },
   {
-    "id": "400",
+    "id": "644",
     "descripcion": "Suministro e instalaci�n de Acometida 2x(3#1/0+1#2+1#6T), Al",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "27FA8783-"
   },
   {
-    "id": "401",
+    "id": "645",
     "descripcion": "\"Suministro e Instalaci�n de Punta captadora de 60cm x 5/8\"\" en acero inoxidable, Incluye: base para fijaci�n, conectores y dem�s accesorios para su correcta instalaci�n y funcionamiento.\"",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "217E0A6B-"
   },
   {
-    "id": "402",
+    "id": "646",
     "descripcion": "Suministro e instalaci�n de kit de puesta a tierra en acero inoxidable",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "2BB0FCC2-"
   },
   {
-    "id": "403",
+    "id": "647",
     "descripcion": "Suministro e instalaci�n de alambron de cobre 1/0 AWG",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "62C4797-"
   },
   {
-    "id": "404",
+    "id": "648",
     "descripcion": "Suministro e instalaci�n de cable de cobre #4 AWG.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "1FB19758-"
   },
   {
-    "id": "405",
+    "id": "649",
     "descripcion": "Suministro e instalaci�n de cable de aluminio ACSR 2/0",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "241C39D4-"
   },
   {
-    "id": "406",
+    "id": "650",
     "descripcion": "Suministro e instalaci�n de grapa de operar en caliente.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2E81DCF0-"
   },
   {
-    "id": "407",
+    "id": "651",
     "descripcion": "Sumninistro e instalaci�n de transformador 225 kVA, 13200/440 V aislado en eceite. Incluye transporte al lugar del proyecto y izaje a la estructura.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "189D8287-"
   },
   {
-    "id": "408",
+    "id": "652",
     "descripcion": "uministro e instalaci�n de Luminaria AP SYL-STREET 66-100W NW 7P P25902.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "10FDB09C-"
   },
   {
-    "id": "409",
+    "id": "653",
     "descripcion": "Suministro e instalaci�n de l�mpara LED EMERGENCIA R1 Sylvania. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "A956480-"
   },
   {
-    "id": "410",
+    "id": "654",
     "descripcion": "Retiro de sellos por operador de red",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "373651DD-"
   },
   {
-    "id": "411",
+    "id": "655",
     "descripcion": "Retiro de barraje de puesta a tierra",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "235B10A6-"
   },
   {
-    "id": "412",
+    "id": "656",
     "descripcion": "Instalacion de medidor Trifasico",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "77B2DCE-"
   },
   {
-    "id": "413",
+    "id": "657",
     "descripcion": "Suministro e instalacion de  bandeja tipo ducto cerrado 30x8",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "18C142BD-"
   },
   {
-    "id": "414",
+    "id": "658",
     "descripcion": "Suministro e instalacion de  Caja de paso metalica 80x80",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "D044C2D-"
   },
   {
-    "id": "415",
+    "id": "659",
     "descripcion": "Suministro e instalaci�n de salida luminaria herm�tica. Incluye caja rawelt, cable #12 AWG de cobre, tuber�a EMT, Luminaria SYLVANIA ref. P25608  de 36 W y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "133BA2FB-"
   },
   {
-    "id": "416",
+    "id": "660",
     "descripcion": "Modificaci�n de puerta de ingreso a cuarto el�ctrico para que abra hacia el exterior",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "317F9E59-"
   },
   {
-    "id": "417",
+    "id": "661",
     "descripcion": "Suministro e instalacion de Barra Antip�nico Tipo Push m�s Manija Exterior de Llaves Gris Plata",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "313EBA4F-"
   },
   {
-    "id": "418",
+    "id": "662",
     "descripcion": "Suministro e instalacion de se�alitica para puertas de cuarto de baja tension",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "22BACF97-"
   },
   {
-    "id": "419",
+    "id": "663",
     "descripcion": "Suministro e instalacion de resane de paredes, pa�ete, pintura color blanco con dos manos  y pintura epoxica para  se�alizacion de piso distancias de seguridad",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "D1E4D6E-"
   },
   {
-    "id": "420",
+    "id": "664",
     "descripcion": "Suministro e instalaci�n de acometida en cable de cobre  (4x((3x500MCM) + (1x(1x350MCM)))) + (1xN�2/0 AWG) THHN/THWN-2, 90�C, TC 600V.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "334C2BB-"
   },
   {
-    "id": "421",
+    "id": "665",
     "descripcion": "Suministro e instalaci�n de acometida en cable de cobre  3#4/0 + 1#2/0 + 1# 2T AWG THHN/THWN-2, 90�C, TC 600V.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2EE83F03-"
   },
   {
-    "id": "422",
+    "id": "666",
     "descripcion": "Suministro e instalaci�n de acometida en cable de cobre 3#350 + 1#4/0 + 1#2T AWG THHN/THWN-2, 90�C, TC 600V.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "14619CA5-"
   },
   {
-    "id": "423",
+    "id": "667",
     "descripcion": "Suministro e instalaci�n de acometida en cable de cobre  2x((3x4/0) + 1x(1x4/0)) + 1x(1 N�2 AWG) THHN/THWN-2, 90�C, TC 600V.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2AB93AB-"
   },
   {
-    "id": "424",
+    "id": "668",
     "descripcion": "Suministro e instalacion Cable de control 12x12",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "C122DD-"
   },
   {
-    "id": "425",
+    "id": "669",
     "descripcion": "\"Suministro e instalaci�n de tuber�a IMC de 3\"\" x 3 m\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "121C1AFC-"
   },
   {
-    "id": "426",
+    "id": "670",
     "descripcion": "Suministro e instalacion de tablero trifasico de 12 circuitos TWC",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2F52EC59-"
   },
   {
-    "id": "427",
+    "id": "671",
     "descripcion": "Suministro e instalaci�n de interruptor autom�tico 3x60A enchufable",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "B7C2561-"
   },
   {
-    "id": "428",
+    "id": "672",
     "descripcion": "\"Suministro e instalaci�n de malla de puesta a tierra subestaci�n. Incluye 9 varillas CW 5/8\"\"x8\u0027, 90m de cable 2/0 Cu desnudo, soldaduras cadweld.\"",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "2382DBD1-"
   },
   {
-    "id": "429",
+    "id": "673",
     "descripcion": "Suministro e instalacion de tablero bypass manual con seleccionador tripolar 150A",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "BDF69F4-"
   },
   {
-    "id": "430",
+    "id": "674",
     "descripcion": "\"Suministro e instalacion de Mastil IMC de 1\"\" x 3m\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "F280D43-"
   },
   {
-    "id": "431",
+    "id": "675",
     "descripcion": "Suministro e instalacion de  Caja de paso metalica 30x30",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "AB7DCF4-"
   },
   {
-    "id": "432",
+    "id": "676",
     "descripcion": "Suministro e instalacion de  Caja de paso metalica 60x40",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "73B7FCC-"
   },
   {
-    "id": "433",
+    "id": "677",
     "descripcion": "Suministro e instalacion de  Caja de paso metalica 120x120x30",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "266F50A2-"
   },
   {
-    "id": "434",
+    "id": "678",
     "descripcion": "Suministro e instalacion de  Caja de paso metalica 150x150x30",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "266F50B4-"
   },
   {
-    "id": "435",
+    "id": "679",
     "descripcion": "\"Acometida en cable de Aluminio HFFRLS 2(3x500 +1x500 +1x1/0T) en tuberia PVC 1x4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "135232BA-"
   },
   {
-    "id": "436",
+    "id": "680",
     "descripcion": "Suministro e instalaci�n de acometida en cable de cobre  3#4/0 + 1#4/0 + 1#4T AWG THHN/THWN-2, 90�C, TC 600V.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2EE83F04-"
   },
   {
-    "id": "437",
+    "id": "681",
     "descripcion": "Suministro e instalacion de acometida en aluminio 3x1/0 +1x1/0 +1x6T",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "28BD4DA2-"
   },
   {
-    "id": "438",
+    "id": "682",
     "descripcion": "\"Suministro e instalacion de acometida en cobre 3x10 +1x10 +x12T en tubo EMT de 1\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2AD4DA3-"
   },
   {
-    "id": "439",
+    "id": "683",
     "descripcion": "Suministro e instalacion de acometida en aluminio 3x2/0 +1x2/0 +x2T",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "34637822-"
   },
   {
-    "id": "440",
+    "id": "684",
     "descripcion": "Suministro e instalacion de acometida en aluminio 3x4/0 +1x4/0 +x2T",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "101C7854-"
   },
   {
-    "id": "441",
+    "id": "685",
     "descripcion": "Suministro e instalaci�n de acometida en cable de cobre  3#4/0 + 1#4/0 + 1#2T AWG",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2EE83F05-"
   },
   {
-    "id": "442",
+    "id": "686",
     "descripcion": "Suministro e instalacion de acometida en aluminio 3x4/0 +1x250 +x2T",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "5FB65CB-"
   },
   {
-    "id": "443",
+    "id": "687",
     "descripcion": "\"Suministro e instalacion de acometida en cobre 3x8 +1x6 +1x8T en tubo EMT 1\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "30ABD4DA3-"
   },
   {
-    "id": "444",
+    "id": "688",
     "descripcion": "\"Suministro e instalacion de acometida en cobre 3x8 +1x8 +1x10T en tubo EMT 1 1/2\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "30ABD4DB4-"
   },
   {
-    "id": "445",
+    "id": "689",
     "descripcion": "\"Suministro e instalacion de alimentador en cobre 2x10 +1x10 +1x12T en tubo EMT 3/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "1506F925-"
   },
   {
-    "id": "446",
+    "id": "690",
     "descripcion": "\"Suministro e instalacion de alimentador en cobre 3x10 +1x8 +1x10T en tubo EMT 3/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "1506F926-"
   },
   {
-    "id": "447",
+    "id": "691",
     "descripcion": "\"Suministro e instalacion de acometida en cobre 3x6 +1x4 +1x8T en tubo EMT 1 1/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "AAE5F07-"
   },
   {
-    "id": "448",
+    "id": "692",
     "descripcion": "Suministro e instalacion de acometida en aluminio 3x1/0 +1x1/0 +1x4T",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "28BD4DA3-"
   },
   {
-    "id": "449",
+    "id": "693",
     "descripcion": "\"Suministro e instalacion de acometida en cobre 3x6 +1x6 +1x8T en tubo EMT 1 1/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "AAE5F08-"
   },
   {
-    "id": "450",
+    "id": "694",
     "descripcion": "\"Suministro e instalacion de acometida en cobre 3x6 +1x6 +1x6T en tubo EMT 1 1/4\"\"\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "AAE5F085-"
   },
   {
-    "id": "451",
+    "id": "695",
     "descripcion": "Suministro e instalaci�n de luminaria herm�tica 36 W, 6500 �K Sylvania P25609. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2DB3B614-"
   },
   {
-    "id": "452",
+    "id": "696",
     "descripcion": "Suministro e instalaci�n de luminaria LED PANEL SOBREPONER RD 18W, 6500 �K Sylvania p27180. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "39B90C95-"
   },
   {
-    "id": "453",
+    "id": "697",
     "descripcion": "Suministro e instalaci�n de luminaria LED MINO 60 CIRCLE 1000. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "24AE92-"
   },
   {
-    "id": "454",
+    "id": "698",
     "descripcion": "Sumninistro e instalaci�n de transformador 300 kVA, 11400/220 V tipo seco. Incluye transporte al lugar del proyecto.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1F9C26EC-"
   },
   {
-    "id": "455",
+    "id": "699",
     "descripcion": "Suministro e instalacion de transferencia automatica de 1000A",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "69BB9CF-"
   },
   {
-    "id": "456",
+    "id": "700",
     "descripcion": "Suministro e instalacion de celda para transformador 300kVA",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "10FCD6BB-"
   },
   {
-    "id": "457",
+    "id": "701",
     "descripcion": "Suministro e instalacion de transferencia automatica de 400A",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "39941F8E-"
   },
   {
-    "id": "458",
+    "id": "702",
     "descripcion": "Suministro e instalaci�n de salida para Tomacorriente doble monof�sica Regulada. Incliye tuber�a EMT, accesorios, caja de conexiones, cableado, se�alizaci�n y dem�s elementos para su puesta en servicio.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "13BA4BD-"
   },
   {
-    "id": "459",
+    "id": "703",
     "descripcion": "\"Suministro e instalaci�n de salida para roseta. Incluye roseta de 4\"\"en porcelana. Incluye caja de conexi�n, cable #12 AWG de cobre, tuber�a EMT y dem�s accesorios para su correcta instalaci�n,  fincionamiento y se�alizaci�n.\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1F6D91D5-"
   },
   {
-    "id": "460",
+    "id": "704",
     "descripcion": "Suministro e instalaci�n de interruptor autom�tico 3x30A en caja moldeada",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "34F286E2-"
   },
   {
-    "id": "461",
+    "id": "705",
     "descripcion": "\"Suministro e instalaci�n de ductos  1�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "61A0AB0-"
   },
   {
-    "id": "462",
+    "id": "706",
     "descripcion": "\"Suministro e instalaci�n de ductos  4�2\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "64A0AB0-"
   },
   {
-    "id": "463",
+    "id": "707",
     "descripcion": "\"Suministro e instalaci�n de ductos  4�2\"\"+1�4\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "4F21F4-"
   },
   {
-    "id": "464",
+    "id": "708",
     "descripcion": "\"Suministro e instalaci�n de ductos  5�2\"\"+4�4\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "5F24F4-"
   },
   {
-    "id": "465",
+    "id": "709",
     "descripcion": "\"Suministro e instalaci�n de ductos  4�2\"\"+2�4\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "4F22F4-"
   },
   {
-    "id": "466",
+    "id": "710",
     "descripcion": "\"Suministro e instalaci�n de ductos  4�2\"\"+5�4\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "4F25F4-"
   },
   {
-    "id": "467",
+    "id": "711",
     "descripcion": "\"Suministro e instalaci�n de ductos  5�2\"\"+2�4\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "5F22F4-"
   },
   {
-    "id": "468",
+    "id": "712",
     "descripcion": "\"Suministro e instalaci�n de coraza Liquid Tide �1\"\". Incluye coraza, terminales, elementos de soporte y se�alizaci�n\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "24A8694-"
   },
   {
-    "id": "469",
+    "id": "713",
     "descripcion": "\"Suministro e instalaci�n de coraza Liquid Tide �1 1/2\"\". Incluye coraza, terminales, elementos de soporte y se�alizaci�n\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "24A8695-"
   },
   {
-    "id": "470",
+    "id": "714",
     "descripcion": "Suministro e instalaci�n de caja de inspecci�n AP280 Para alumbrado publico. Incluye suministro de 1 tapas, excavaci�n y retiro de escombros.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "227B31E3-"
   },
   {
-    "id": "471",
+    "id": "715",
     "descripcion": "Suministro e instalaci�n de caja de inspecci�n CS276 P. Incluye suministro de 2 tapas, excavaci�n y retiro de escombros.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "23D159F6-"
   },
   {
-    "id": "472",
+    "id": "716",
     "descripcion": "\"Suministro e instalaci�n de banco de tuber�a   4�6\"\" PVC. Incluye tuber�a, campanas terminales, tapones, cinta de se�alizaci�n, excavaci�n y retiro de escombros.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "23DAC4F6-"
   },
   {
-    "id": "473",
+    "id": "717",
     "descripcion": "Suministro e instalaci�n de acometida 3x(3#500+1#350)+1x4/0 Aluminio",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "653FA5B-"
   },
   {
-    "id": "474",
+    "id": "718",
     "descripcion": "Suministro e instalaci�n de acometida 3#500+1#350+2/0T Aluminio",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "170C2A7F-"
   },
   {
-    "id": "475",
+    "id": "719",
     "descripcion": "Suministro e instalaci�n de acometida 2x(3#4/0+1#2/0+1/0)+1x4/0 Aluminio",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "9946AD-"
   },
   {
-    "id": "476",
+    "id": "720",
     "descripcion": "Suministro e instalaci�n de acometida 3#2/0+4T Aluminio",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "15FE5936-"
   },
   {
-    "id": "477",
+    "id": "721",
     "descripcion": "Suministro e instalaci�n de acometida 3#4/0+2/0T Aluminio",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "39F6E3D7-"
   },
   {
-    "id": "478",
+    "id": "722",
     "descripcion": "Suministro e instalaci�n de acometida 2#6+1#6+6T Aluminio",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "29F6E3D7-"
   },
   {
-    "id": "479",
+    "id": "723",
     "descripcion": "Suministro e instalaci�n de cable 1/0 AWG de cobre enterrado.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "8B3A1BA-"
   },
   {
-    "id": "480",
+    "id": "724",
     "descripcion": "Suministro e instalaci�n de DPS tipo intemperie 12kV, 10 kA. Incluye soportes y herrajes.",
-    "unidad": "jg"
+    "unidad": "jg",
+    "code": "2668838B-"
   },
   {
-    "id": "481",
+    "id": "725",
     "descripcion": "Suministro e instalaci�n de cable de aluminio 3x185 mm2 XLPE 15 kV",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "E5B17E7-"
   },
   {
-    "id": "482",
+    "id": "726",
     "descripcion": "\"Suministro e instalaci�n de afloramiento 1�6\"\" IMC. Incluye tuber�a, 1 capacetes, 1 union, 1 curva, cinta de se�alizaci�n, cinta de acero inoxidable y dem�s elementos para su correta instalaci�n.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "31FECDAD-"
   },
   {
-    "id": "483",
+    "id": "727",
     "descripcion": "Suministro e instalaci�n de cruceta met�lica 2,50m. Incluye herrajes",
-    "unidad": "gb"
+    "unidad": "gb",
+    "code": "189EAF31-"
   },
   {
-    "id": "484",
+    "id": "728",
     "descripcion": "Suministro e instalaci�n de seccionador monopolar 400A 15 kV tipo cuchilla. Incluye herrajes",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "F038038-"
   },
   {
-    "id": "485",
+    "id": "729",
     "descripcion": "Suministro e instalaci�n de terminal preformado tipo intemperie de MT para cable 350 mcm",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "28880F8B-"
   },
   {
-    "id": "486",
+    "id": "730",
     "descripcion": "Suministro e instalaci�n de terminal preformado tipo interior de MT para cable 350 mcm",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1FF24086-"
   },
   {
-    "id": "487",
+    "id": "731",
     "descripcion": "Sumninistro e instalaci�n de transformador 500 kVA, 11400/220 V tipo seco clase H. Incluye transporte al lugar del proyecto.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "37757FC6-"
   },
   {
-    "id": "488",
+    "id": "732",
     "descripcion": "Suministro e instalaci�n de celda con seccionador de l�nea 630A, 24 kV. Incluye transporte allugar del proyecto",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "245F33B0-"
   },
   {
-    "id": "489",
+    "id": "733",
     "descripcion": "Suministro e instalaci�n de celda de medida compacta, 24 kV. Incluye 3 transformadores de corriente, 3 transformadores de potencial, cable 12x12 de cobre norma ENEL, bornera de pruebas, medidor electr�nico seg�n norma ENEL Y transporte al lugar del proyecto",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "965224D-"
   },
   {
-    "id": "490",
+    "id": "734",
     "descripcion": "Suministro e instalaci�n de fusible HH 50A, 24 kV",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2BBAB097-"
   },
   {
-    "id": "491",
+    "id": "735",
     "descripcion": "Suministro e instalaci�n de luminaria Bala Stil Led Cuadrada 18w. Incluye tapa salida de cord�n, prensaestopa, cable 3#16 AWG de cobre y dem�s elementos para su correcta instalaci�n y fincionamiento.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "12D03ACC-"
   },
   {
-    "id": "492",
+    "id": "736",
     "descripcion": "Suministro e instalaci�n de Luminaria AP 30 W. Incluye cable 3#16 encauchetado, prensaestopa y elementos de conexionado.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "21BF1F03-"
   },
   {
-    "id": "493",
+    "id": "737",
     "descripcion": "\"Suministro e instalaci�n de tuber�a  1�2\"\" IMC Incluye tuber�a, terminales, elementos de soporte y se�alizaci�n.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "8CDADA2-"
   },
   {
-    "id": "494",
+    "id": "738",
     "descripcion": "Suministro e instalaci�n de Acometida 3#4+1#6+1#6T, Al",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "227C081-"
   },
   {
-    "id": "495",
+    "id": "739",
     "descripcion": "Suministro e instalaci�n de alambron de aluminio 8 mm anillo superior y conexionado. Incluye elementos de conexionado y soporte.",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "2264E124-"
   },
   {
-    "id": "496",
+    "id": "740",
     "descripcion": "\"Suministro e instalaci�n de bajante en alambr�n de aluminio 8 mm. Incluye tubo PVC de 1\"\" y elementos de conexionado y soporte.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "3A4A4E80-"
   },
   {
-    "id": "497",
+    "id": "741",
     "descripcion": "Suministro e instalaci�n de caja pl�stica IP 65.  Incluye elementos de soporte y se�alizaci�n.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "170D7FFB-"
   },
   {
-    "id": "498",
+    "id": "742",
     "descripcion": "\"Suministro e instalaci�n de cable 1/0 AWG de cobre.  Incluye tubo IMC de 1\"\" y elementos de conexionado y soporte.\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "4EFF172-"
   },
   {
-    "id": "499",
+    "id": "743",
     "descripcion": "Alquiler, uso y recopilacion de datos con Analizador de redes.",
-    "unidad": "dia"
+    "unidad": "dia",
+    "code": "11FB6D2-"
   },
   {
-    "id": "500",
+    "id": "744",
     "descripcion": "Suministro e instalacion de planta electrica 400KVA / 440V-240V",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2B1062E5-"
   },
   {
-    "id": "501",
+    "id": "745",
     "descripcion": "\"Suministro e instalaci�n de ductos  2�2\"\" PVC DB\"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "CD2F2DB-"
   },
   {
-    "id": "502",
+    "id": "746",
     "descripcion": "\"Suministro e instalacion Afloramiento en 1�3\"\" IMC seg�n norma CS400 \"",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "ACD1F30-"
   },
   {
-    "id": "503",
+    "id": "747",
     "descripcion": "MONTAJE EN POSTE DE TRANSFORMADOR TRIF�SICO PARA SERVICIO DEDICADO CIRCUITO PRIMARIO SENCILLO NORMA CODENSA CTU 520. No incluye poste, ni componentes estructura (LA) red primaria.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2E06143E-"
   },
   {
-    "id": "504",
+    "id": "748",
     "descripcion": "Sumninistro e instalaci�n de transformador 112,5 kVA, 11400/220 aislado en eceite. Incluye transporte al lugar del proyecto y izaje a la estructura.",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "1C1FDF15-"
   },
   {
-    "id": "505",
+    "id": "749",
     "descripcion": "SUMINISTRO E INSTALACION DE BANDEJA TIPO MALLA DE 65X300 mm  ACABADO ELECTROZINCADO, Bandeja con malla de varillas de acero electrosoldadas. Acabado electrozincado. INCLUYE ACCESORIOS DE FIJACI�N Y TODO LO NECESARIO PARA SU CORRECTO  FUNCIONAMIENTO",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "2826CD8B-"
   },
   {
-    "id": "506",
+    "id": "750",
     "descripcion": "Suministro e instalaci�n de acometida 3#2/0+2/0T Aluminio sin bornas",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "29B38E0B-"
   },
   {
-    "id": "507",
+    "id": "751",
     "descripcion": "Suministro e instalaci�n de alimentador 3#12(F)+1#12(T) de cobre",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "265D173D-"
   },
   {
-    "id": "508",
+    "id": "752",
     "descripcion": "Suministro e instalaci�n de acometida 3#350+350T Cu sin bornas",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "248B5690-"
   },
   {
-    "id": "509",
+    "id": "753",
     "descripcion": "Suministro e instalaci�n de alimentador 3#10(F)+1#10(T) de cobre",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "21C135B5-"
   },
   {
-    "id": "510",
+    "id": "754",
     "descripcion": "\"Suministro e instalacion de tuber�a 1�3/4\"\" PVC\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "103EA7E3-"
   },
   {
-    "id": "511",
+    "id": "755",
     "descripcion": "\"Suministro e instalacion de tuber�a 1�1 1/2\"\" EMT\"",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "195FAE5A-"
   },
   {
-    "id": "512",
+    "id": "756",
     "descripcion": "Suministro e instalacion de tablero de 36 circuitos TWC 36MB",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "36E2F193-"
   },
   {
-    "id": "513",
+    "id": "757",
     "descripcion": "Suministro e instalacion de tablero de 6 circuitos TWP 6BO",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "10F3868D-"
   },
   {
-    "id": "514",
+    "id": "758",
     "descripcion": "Suministro e instalacion de interruptor automatico termomagnetico atornillable 1x15 - 1x20 - 1x30",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "14C50884-"
   },
   {
-    "id": "515",
+    "id": "759",
     "descripcion": "Suministro e instalacion de interruptor automatico termomagnetico atornillable 2x20A",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "4B8ECE5-"
   },
   {
-    "id": "516",
+    "id": "760",
     "descripcion": "Suministro e instalacion de interruptor automatico termomagnetico atornillable 3x40A",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "63D95D2-"
   },
   {
-    "id": "517",
+    "id": "761",
     "descripcion": "Suministro e instalacion de interruptor automatico termomagnetico atornillable 3x50A",
-    "unidad": "un"
+    "unidad": "un",
+    "code": "356CE6F8-"
   },
   {
-    "id": "518",
+    "id": "762",
     "descripcion": "Salida electrica en tuberia EMT 3/4 en conductores 3x12 AWG, promedio 3m por techo",
-    "unidad": "ml"
+    "unidad": "ml",
+    "code": "1CCFCD7F-"
   }
 ]
