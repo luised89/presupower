@@ -7,10 +7,14 @@ package screen;
 import dpsk.DeepSeekChatProcessor;
 import tablas.PresupuestoProcessor;
 import funtion.controller;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,13 +22,62 @@ import javax.swing.JOptionPane;
  * @author Luis
  */
 public class generator extends javax.swing.JFrame {
+    
+    private static CustomOutputStream customOut;
+    private static CustomOutputStream customErr;
+    private static JLabel consoleLabel;
+    
+    public static void redirectConsole(JLabel label) {
+        consoleLabel = label;
+        customOut = new CustomOutputStream(System.out, label);
+        customErr = new CustomOutputStream(System.err, label);
+        
+        System.setOut(new PrintStream(customOut, true));
+        System.setErr(new PrintStream(customErr, true));
+    }
+    
+    static class CustomOutputStream extends OutputStream {
+        private final PrintStream original;
+        private final JLabel label;
+        private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        
+        public CustomOutputStream(PrintStream original, JLabel label) {
+            this.original = original;
+            this.label = label;
+        }
+        
+        @Override
+        public void write(int b) throws IOException {
+            baos.write(b);
+            original.write(b); // Mantener la salida original
+            updateLabel();
+        }
+        
+        @Override
+        public void write(byte[] b, int off, int len) throws IOException {
+            baos.write(b, off, len);
+            original.write(b, off, len); // Mantener la salida original
+            updateLabel();
+        }   
 
     
+                private void updateLabel() {
+            String content = baos.toString();
+            String[] lines = content.split("\r\n|\n");
+            String lastLine = lines.length > 0 ? lines[lines.length - 1] : "";
+            
+            javax.swing.SwingUtilities.invokeLater(() -> {
+                label.setText(lastLine);
+            });
+        }
+    }
+        
     private javax.swing.JLabel lblEstado;
     
     public generator() {
         initComponents();
         configurarEstadoLabel();
+        redirectConsole(labelconsole); // Redirigir la consola al iniciar
     }
 
     
@@ -54,6 +107,7 @@ public class generator extends javax.swing.JFrame {
         salir = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        labelconsole = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -95,6 +149,10 @@ public class generator extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(240, 240, 240));
         jLabel4.setText("PROCEDE");
 
+        labelconsole.setForeground(new java.awt.Color(227, 227, 227));
+        labelconsole.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelconsole.setText("---");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -116,6 +174,10 @@ public class generator extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(65, 65, 65))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelconsole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,7 +194,9 @@ public class generator extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(salir)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(89, 89, 89))
+                .addGap(28, 28, 28)
+                .addComponent(labelconsole)
+                .addGap(45, 45, 45))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -199,41 +263,36 @@ public class generator extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
+public static void main(String args[]) {
+    /* Set the Nimbus look and feel */
+    //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+    try {
+        for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+            if ("Nimbus".equals(info.getName())) {
+                javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                break;
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(generator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(generator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(generator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(generator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new generator().setVisible(true);
-            }
-        });
+    } catch (ClassNotFoundException | InstantiationException | 
+             IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+        java.util.logging.Logger.getLogger(area_de_trabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
     }
+    //</editor-fold>
+
+    /* Create and display the form */
+    java.awt.EventQueue.invokeLater(new Runnable() {
+        public void run() {
+            generator frame = new generator();
+            frame.setVisible(true);
+            
+            // Redirigir la consola al JLabel
+            generator.redirectConsole(frame.labelconsole);
+            
+            // Ejemplo de uso
+            System.out.println("Sistema iniciado correctamente");
+        }
+    });    
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
@@ -242,6 +301,7 @@ public class generator extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel labelconsole;
     private javax.swing.JButton salir;
     // End of variables declaration//GEN-END:variables
 }

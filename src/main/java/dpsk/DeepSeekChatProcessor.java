@@ -53,10 +53,12 @@ public class DeepSeekChatProcessor {
                 // Verificar conexión
                 String greetingResponse = chatWithDeepSeek("Confirm connection");
                 System.out.println("Connection test: " + greetingResponse);
+                System.out.println("PORFAVOR ESPERA");
                 
                 // Procesar archivos
                 String processRequest = buildProcessRequest(datosJson, apusJson);
                 String processResponse = chatWithDeepSeek(processRequest);
+                System.out.println("PORFAVOR ESPERA");
                 
                 // Guardar resultado
                 saveResult(processResponse);
