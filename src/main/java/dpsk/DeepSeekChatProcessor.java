@@ -40,6 +40,24 @@ public class DeepSeekChatProcessor {
         return Files.readString(keyPath).trim();
     }
 
+    private String loadDatosJsonFromFile() throws IOException {
+    Path datosPath = Paths.get(
+        System.getProperty("user.dir"), 
+        "src", "main", "resources", "datos.json"
+    );
+    return Files.readString(datosPath, StandardCharsets.UTF_8);
+    }
+    
+    
+    private String loadApusJsonFromFile() throws IOException {
+    Path apusPath = Paths.get(
+        System.getProperty("user.dir"), 
+        "src", "main", "resources", "lista_de_apus.json"
+    );
+    System.out.println("Loading APUS JSON from: " + apusPath);
+    return Files.readString(apusPath, StandardCharsets.UTF_8);
+}
+    
     public void procesarArchivos() {
         new Thread(() -> {
             try {
@@ -47,8 +65,8 @@ public class DeepSeekChatProcessor {
                 mostrarMensajeTemporal("Processing started", 2000);
                 
                 // Cargar archivos
-                String datosJson = loadResourceAsString("datos.json");
-                String apusJson = loadResourceAsString("lista_de_apus.json");
+                String datosJson = loadDatosJsonFromFile();
+                String apusJson = loadApusJsonFromFile();
                 
                 // Verificar conexión
                 String greetingResponse = chatWithDeepSeek("Confirm connection");
@@ -111,11 +129,12 @@ public class DeepSeekChatProcessor {
             "ARCHIVO datos.json:\n%s\n\n" +
             "ARCHIVO lista_de_apus.json:\n%s\n\n" +
             "INSTRUCCIONES:\n" +
-            "1. Para cada elemento en 'Descripcion' de datos.json, encuentra la mejor coincidencia en 'descripcion' de lista_de_apus.json\n" +
-            "2. Devuelve UNICAMENTE un JSON con este formato:\n" +
+            "1. de lista_de_apus.json no tengas en cuenta la columa id, solo nos importa la columna code"+
+            "2. Para cada elemento en 'Descripcion' de datos.json, encuentra la mejor coincidencia en 'descripcion' de lista_de_apus.json\n" +
+            "3. Devuelve UNICAMENTE un JSON con este formato:\n" +
             "[{\"Descripcion\": \"texto original\", \"Cantidad\": \"cantidades de 'datos'\", \"code\": \"code coincidente\"}]\n" +
-            "3. Si no hay coincidencia, usa \"04\" como code\n" +
-            "4. No incluyas explicaciones, solo el JSON requerido",
+            "4. Si no hay coincidencia, usa \"04\" como code\n" +
+            "5. No incluyas explicaciones, solo el JSON requerido",
             datosJson, apusJson
         );
     }
