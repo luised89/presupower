@@ -2,11 +2,15 @@ La gestión de presupuestos en construcción enfrenta desafíos clave: falta de 
 
 El propósito de “Presupower” es automatizar la gestión de presupuestos de construcción mediante el procesamiento inteligente de listas de materiales (APU - Análisis de Precios Unitarios). Se encuentra desarrollada bajo las siguientes características:
 
-Base de datos: MySQL \n 
-Puerto: 3306 \n
-Nombre base de datos: “user-presupower” \n
-Backend: java 17+ Spring Boot - Java \n
-Frontend: Java swing - Java \n
+Base de datos: MySQL
+
+Puerto: 3306 
+
+Nombre base de datos: “user-presupower”
+
+Backend: java 17+ Spring Boot - Java
+
+Frontend: Java swing - Java
 
 ├── src/  
 │   ├── main/  
