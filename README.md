@@ -1,3 +1,7 @@
+video de uso:
+https://www.youtube.com/watch?v=ltuqCLwAtos
+
+
 La gestión de presupuestos en construcción enfrenta desafíos clave: falta de automatización en el emparejamiento de materiales, cálculos manuales propensos a errores y dificultad para acceder a precios actualizados. Proponemos a “Presupower” como solución a estas problemáticas, combinando catálogos técnicos con IA para optimizar costos, garantizar precisión y agilizar la creación de presupuestos.
 
 El propósito de “Presupower” es automatizar la gestión de presupuestos de construcción mediante el procesamiento inteligente de listas de materiales (APU - Análisis de Precios Unitarios). Se encuentra desarrollada bajo las siguientes características:
